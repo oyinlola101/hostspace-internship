@@ -5,12 +5,12 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: test-1
+    namespace: test
     server: https://kubernetes.default.svc
   source:
     repoURL: hhttps://github.com/oyinlola101/hostspace-internship.git
     path: new/helm/nginx
-    targetRevision: main
+    targetRevision: HEAD
   project: default
   syncPolicy:
     automated:
