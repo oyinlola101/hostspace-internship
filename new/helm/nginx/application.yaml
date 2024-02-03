@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: oyins-test
+  name: oyin-test
   namespace: argocd
 spec:
   destination:
     namespace: test
     server: https://kubernetes.default.svc
   source:
-    repoURL: hhttps://github.com/oyinlola101/hostspace-internship.git
+    repoURL: https://github.com/oyinlola101/hostspace-internship.git
     path: new/helm/nginx
-    targetRevision: HEAD
+    targetRevision: main
   project: default
   syncPolicy:
     automated:
